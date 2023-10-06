@@ -192,8 +192,7 @@ print("The songs in the choosen genre - \(choosenGenre):")
 
 
 
-for var songs in filteredSongs{
+for var songs in filteredSongs {
     print(songs.description, songs.publisher)
-
 }
 
