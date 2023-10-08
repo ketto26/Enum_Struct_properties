@@ -90,7 +90,7 @@ var book5 = Book(title: "Nineteen Eighty-Four (1984)", author: "George Orwell", 
 books = [book1, book2, book3, book4, book5]
 
 func booksPublishedAfter(_ year: Int, from books: [Book]) -> [Book] {
-    return books.filter { $0.publicationYear > year }
+    books.filter { $0.publicationYear > year }
 }
 
 let yearsToCheck = 1945
@@ -135,7 +135,6 @@ struct BankAccount {
             }
         }
     }
-    
 }
 var accountZoro = BankAccount(holderName: "Roronoa Zoro", accountNumber: "0PO21111", balance: 20202020)
 
@@ -182,7 +181,7 @@ var myPlaylist: [Song] = [
 ]
 
 func checkGenre(_ playlist: [Song], genre: Genre) -> [Song] {
-    return playlist.filter{ $0.genre == genre }
+    playlist.filter{ $0.genre == genre }
 }
 
 let choosenGenre = Genre.heavyMetal
